@@ -12,7 +12,7 @@ weatherdata.addEventListener("submit", (e) => {
   console.log(location);
 
   if (location.length > 0) {
-    const url = `https://weather-fore-cast.onrender.com//weather?address=${location}`;
+    const url = `https://weather-fore-cast.onrender.com/weather?address=${location}`;
 
     messageOne.textContent =
       "Fecting the Data From API , Thanks For Your Patinces!..";
