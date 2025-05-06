@@ -3,6 +3,8 @@ const express = require("express");
 const hbs = require("hbs");
 const utils = require("./utils/forecats.js");
 
+const port = process.env.PORT || 3000;
+
 // console.log(__dirname);
 // console.log(__filename);
 
@@ -54,4 +56,4 @@ app.use((req, res, next) => {
   next();
 });
 
-app.listen(3000, () => console.log("Liseting on port:3000"));
+app.listen(port, () => console.log("Liseting on port:3000"));
